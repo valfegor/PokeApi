@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Z-index para que cuando se suba o se haga scroll los cards no pasen por encima del header
+*/
+.header{
+    width: 100%;
+    z-index: 1;
+}
+
+.headerStyle{
+    color: aliceblue;
+}
+
+.datos_personajes{
+    margin-top: 140px;
+    margin-bottom: 60px;
+    
+}
