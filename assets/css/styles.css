@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: yellow;
 }
 
 /*
@@ -13,6 +14,7 @@ Z-index para que cuando se suba o se haga scroll los cards no pasen por encima d
 
 .headerStyle{
     color: aliceblue;
+    background-color:red;
 }
 
 .datos_personajes{

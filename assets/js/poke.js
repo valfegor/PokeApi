@@ -4,7 +4,7 @@ const ObtenerPokemon = (url) =>{
     return fetch(url)
     .then((response)=> response.json())
     .then((json)=>{
-      llenarDatos(json.results),paginacion(json),console.log(json.previous) 
+      llenarDatos(json.results),paginacion(json),console.log(json) 
     })
     //el error
     .catch((error)=>{
@@ -43,7 +43,7 @@ const paginacion = (boton)=>{
     let nextDisabled = "";
     (boton.previous==null)?prevDisabled="disabled":prevDisabled="";
     (boton.next==null)?nextDisabled="disabled":nextDisabled="";
-    let html = `<li class="page-item" ${prevDisabled} ><a class="page-link" onclick="ObtenerPokemon('${boton.previous}')">previues</a></li> <li class="page-item" ${nextDisabled} ><a class="page-link" onclick="ObtenerPokemon('${boton.next}')">Next</a></li>`;
+    let html = `<li class="page-item" ${prevDisabled} ><a class="page-link" onclick="ObtenerPokemon('${boton.previous}')">previus</a></li> <li class="page-item" ${nextDisabled} ><a class="page-link" onclick="ObtenerPokemon('${boton.next}')">Next</a></li>`;
     document.getElementById("paginacion").innerHTML=html;
 }
 
