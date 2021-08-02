@@ -31,13 +31,14 @@ Z-index para que cuando se suba o se haga scroll los cards no pasen por encima d
 }
 
 .card{
-    background-color: black;
-    color: white;
+    background-color:white;
+    color: black;
     text-align: center;
+    
 
 }
 .card:hover{
-    background-color:blue;
+    background-color:yellow;
     transition: all 1s;
     
 }
@@ -47,5 +48,7 @@ Z-index para que cuando se suba o se haga scroll los cards no pasen por encima d
     border-bottom-color: #00FF00;
     background-color:red;
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center; 
+    width:100%;
+    height: 100%; 
 }
