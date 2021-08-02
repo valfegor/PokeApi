@@ -22,3 +22,29 @@ Z-index para que cuando se suba o se haga scroll los cards no pasen por encima d
     margin-bottom: 60px;
     
 }
+
+
+.prueba{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+.card:hover{
+    background-color:blue;
+    transition: all 1s;
+    
+}
+
+.card-img-top {
+    border-bottom-width: 10px solid;
+    border-bottom-color: #00FF00;
+    background-color:red;
+    text-transform: uppercase;
+    text-align: center;  
+}
